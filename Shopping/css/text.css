@@ -64,3 +64,97 @@ input{
     top: 10px;
     left:85px;
 }
+
+/* 轮播图 */
+.slider{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.displayImg> img{
+     transition: opacity 1s linear;
+    opacity: 1;
+    width:  100%; 
+    height: 300px;    
+    margin: 0 auto; 
+}
+
+#images{
+    position: relative;
+    width: 100%;
+}
+
+#images>a{
+    transition:  opacity 1s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.displayImg{
+    opacity: 1;
+}
+
+.hiddenImg{
+ opacity: 0;
+}
+
+.btn{
+    position: absolute;
+    top:50%;
+    width: 60px;
+    height: 30px;
+    background-color: #000;
+    opacity: 0.3;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background-position: center;
+}
+
+.rightButton{
+    right:10px;
+}
+
+.leftButton{
+    left:10px;
+}
+
+.txt-box{
+
+
+    width: 100%;
+    height:5px;
+    list-style: none;
+    position: absolute;    
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 5;
+    transition: height 0.1s linear 0s;
+}
+
+.txt-box:hover{
+    height: 40px;
+}
+
+.txtItem{
+    width: 12.5%;
+    margin-right: 2px;
+    color: #fff;
+    text-align: center;    
+}
+.txtItem:last-child{
+    margin:0;
+}
+
+.txtItem:hover,.heighlightColor{
+    background-color:rgb(252, 164, 2);
+}
+
+.normalColor{
+    background-color:rgba(0,0,0,0.5);
+}
