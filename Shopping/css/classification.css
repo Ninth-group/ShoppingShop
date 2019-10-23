@@ -1,0 +1,32 @@
+/* 分类栏 */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 750px;
+    height: 40px;
+   
+}
+ 
+.flex-item {
+    
+    width: 20%;
+    height: 30px;
+    margin: 5px;
+}
+.flex-item .colour1
+{
+    color: blueviolet;
+}
+.flex-item .colour2
+{
+    color: red;
+}
+.flex-item .colour3
+{
+    color:skyblue;
+}
+.flex-item >a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
