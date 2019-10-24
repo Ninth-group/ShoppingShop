@@ -92,3 +92,12 @@
 .normalColor{
     background-color:rgba(0,0,0,0.5);
 }
+
+.container1{
+    width: 60%;
+    /* min-width: 1000px; */
+    /* background-color: blue; */
+    height: 300px;
+    margin: 0px auto;
+    min-width: 800px;
+}
