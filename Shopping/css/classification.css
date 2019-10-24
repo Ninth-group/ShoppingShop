@@ -1,14 +1,13 @@
-/* 分类栏 */
+/* 分类栏目 */
 .flex-container {
     display: -webkit-flex;
     display: flex;
     width: 750px;
     height: 40px;
-   
+    font-size: 19px;
 }
  
 .flex-item {
-    
     width: 20%;
     height: 30px;
     margin: 5px;
