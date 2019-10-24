@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 .displayImg> img{
-     transition: opacity 1s linear;
+     transition: opacity 5s linear;
     opacity: 1;
     width:  100%; 
     height: 300px;    

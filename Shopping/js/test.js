@@ -45,7 +45,7 @@ function rightImg() {
 
 
 //网页加载后启动定时器，每隔1秒调用changeImgGo（）换片
-var timer = window.setInterval(rightImgGo, 1000);
+var timer = window.setInterval(rightImgGo, 2000);
 
 //鼠标移出后移除定时器
 function stopChange() {
