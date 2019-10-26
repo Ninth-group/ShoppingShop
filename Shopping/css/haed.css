@@ -16,8 +16,8 @@
 	line-height: 1.5;
 	font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
 }
-li a:hover {
-    background-color:darkkhaki;
+div a:hover {
+    background-color:#6495ED;
     color: white;
 }
  body i{
