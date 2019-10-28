@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+<link rel="stylesheet" type="text/css" href="/Shopping/css/register.css">
+<script src="/lib/requirejs/require.js" data-main="/js/register"></script>
+</head>
+<body>
+		<header>			
+		<a href="/Shopping/index.html">首页</a>
+		</header>
+	<main class="register">
+		<div class="fl"></div>
+		<div class="right">
+			<div class="top">
+				<h2>注册新用户</h2><p>我已经注册，现在就<a href="login.html">登录</a></p>
+			</div>
+			<form>
+				<div class="check"><input type="text" placeholder="用户名"><div class="code"></div><p style="display: none;">输入用户名</p></div>
+				<div class="phone"><input type="text" name="phone" placeholder="请输入手机号"><div class="acquire">获取短信验证码</div><p style="display: none;">请填写真实的手机号，并进行验证</p></div>
+				<div class="sjcode"><input type="text" placeholder="填写手机验证码"><p style="display: none;">请输入手机接收到的验证码</p></div>
+				<div class="one"><input type="password" placeholder="设定登录密码"><p style="display: none;">6-16位字符，可使用字母、数字或符号的组合</p></div>
+				<div class="two"><input type="password" name="password" placeholder="再次输入密码"><p style="display: none;">请再次输入登录密码，两次输入必须一致</p></div>
+				<input class="sbt" type="submit" name="" value="立即注册">
+				<div class="regInfo"></div>
+			</form>				
+		</div>
+	</main>
+
+</body>
+</html>
