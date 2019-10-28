@@ -16,8 +16,7 @@
   <!-- 导航开始 -->
   <header>
     <nav class="nav bg-light">
-      <a class="nav-link disabled " href="../index.html">首页</a>
-      <a class="nav-link actived" href="commodity.html">商品</a>
+      <a class="nav-link disabled " href="./tbspList.html">店铺</a>
       <a class="nav-link actived" href="#">购物车</a>
     </nav>
     <!-- 导航结束 -->
@@ -25,8 +24,9 @@
   <div class='container mt-3'>
     <div class="row">
       <div class="col-2 font-weight-bold">全部商品 <span class="text-danger" data-name="units">0</span></div>
-      <div class="col-4">免息商品</div>
-      <div class="col-3">配送至：广西柳州市</div>
+      <div class="col-3">热门商品</div>
+      <div class="col-3">免息包邮</div>
+      <div class="col-2">配送至：广西柳州市</div>
     </div>
     <div class="row mt-3 bg-light border p-3">
       <div class="col-2"><input type="checkbox" checked="true" data-operator='selectAll' >全选</div>
@@ -61,7 +61,7 @@
       <div class="col-2"><button class="btn btn-light" data-operator='clearAll'>清空购物车</button></div>
       <div class="col-2">已选择 <span class="text-danger" data-name="selectedQty">0</span>件商品</div>
       <div class="col-2">总价：¥<span class="text-danger" data-name="selectedAmount">0</span></div>
-      <div class="col-2"><button class="btn btn-danger" data-operator='gotoPlay'>去结算</button></div>
+      <div class="col-2"><button class="btn btn-danger" data-operator='gotoPlay'>结算</button></div>
     </div>
   </div>
 
@@ -74,8 +74,8 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
     crossorigin="anonymous"></script>
-  <script src="../CommodityPage/Shoppjs/shoppingcart.js"></script>
-  <script src="../CommodityPage/Shoppjs/cartList.js"></script>
+  <script src="Shoppjs/shoppingcart.js"></script>
+  <script src="Shoppjs/cartList.js"></script>
 </body>
 
 </html>
