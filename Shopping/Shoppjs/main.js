@@ -3,10 +3,10 @@
 var productsJson = {
     "productList": [
     { "id": "01", "title": "NARS 双色口红+复古红", "imgSrc": "kh1.jpg", "price": 95.00 },
-    { "id": "02", "title": "新西兰进口白金版婴幼儿奶粉", "imgSrc": "02.jpg", "price": 80.50 },
-    { "id": "03", "title": "卡耐基经典 人性的弱点", "imgSrc": "03.jpg", "price": 50.00 },
-    { "id": "04", "title": "海淘耳机", "imgSrc": "04.jpg", "price": 33.50 },
-    { "id": "05", "title": "剁椒鱼头", "imgSrc": "djyt.jpg", "price": 300.00 }
+    { "id": "02", "title": "最新版短裙  限时出售", "imgSrc": "09.jpg", "price": 160.70 },
+    { "id": "03", "title": "秋冬 特价出售", "imgSrc": "10.jpg", "price": 59.00 },
+    { "id": "04", "title": "耐克正品 限时半价", "imgSrc": "11.jpg", "price": 118.00 }
+   
 
     ]
 }
