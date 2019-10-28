@@ -109,8 +109,8 @@
 }
 
 /* 掌上秒杀 */
-hm_sk{ }
-sk_icon{
+
+.sk_icon{
     background: url("") no-repeat;
     background-size: 16px;
     height: 20px;
