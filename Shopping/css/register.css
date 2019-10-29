@@ -1,7 +1,7 @@
 .register{
     border: 0;
     margin-bottom: 80px;
-    text-align: center;
+  
 }
 .right{
     width: 430px;
@@ -12,8 +12,8 @@
 }
 .top{
     overflow: hidden;
-            border-bottom:2px solid ;
-            color: brown;
+    border-bottom:2px solid ;
+    color: brown;
 }
 .top h2{
     float: left;
