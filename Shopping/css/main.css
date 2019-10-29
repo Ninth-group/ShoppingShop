@@ -1,0 +1,48 @@
+
+
+.mod{   
+    width: 960px;
+    margin: 20px auto ; 
+    /* height: 440px; */
+    overflow: hidden;
+    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+.mod html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button {
+    margin: 0;
+    padding: 0;
+}
+.mod a{
+    color: #3983e5;
+    text-decoration: none;
+    color: #666;
+}
+.mod ul{
+    list-style: none;
+}
+
+.mod .mod-content{
+    height:300px;
+    border:1px solid #E0E0E0;
+    border-top-width: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mod .left{
+    float:left;
+    width: 187px;
+    padding: 15px 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mod .right{
+    float:left;
+    margin-left: 222px;
+    padding: 12px 0px 0px 15px;   
+    border-left: 1px dotted #a3a3a3;
+    word-spacing:36px;
+
+} 
