@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>杰克超市</title> 
+
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 760px;
+    height: 390px;
+    background-color: lightgrey;
+    
+}
+/* 响应式布局 */
+@media screen and (max-width:1200px){
+    .mod{
+        width: 800px;
+    }
+
+    .product-item{
+
+        margin:0px 20px 10px 0px;  
+
+    }
+    .mod .right{
+        padding: 12px 0px 0px 30px;
+    }
+}
+.entrance dl{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.entrance dt {   
+     font: 700 14px/24px "Microsoft yahei";
+}
+
+.entrance dd {
+    margin-left: -10px;
+    overflow: hidden;
+    zoom: 1;
+}
+.entrance .entrance-item {
+    position: relative;
+    float: left;
+    display: block;
+    border-left: 1px solid #ececec;
+    line-height: 1;
+    height: auto;
+    padding: 0 8px;
+    margin: 7px 0 5px;
+}
+.entrance a:hover{
+    color:#3983e5;
+}
+.icon_hot {
+    width: 11px;
+    height: 11px;
+    background-position: -16px -32px;
+}
+.entrance .entrance-item .icon_hot {
+    position: absolute;
+    top: -6px;
+    right: 3px;
+}
+
+a{
+    text-decoration:none;
+    font-size: 13px;
+    color: #778899;
+}
+dt{
+    text-align: center;
+    font-size: 15px;
+}
+.flex-item {
+    /* background-color: cornflowerblue; */
+    width: 580px;
+    height: 480px;
+    margin: 10px;
+}
+.flex-item-xy{
+    float:left;
+    width: 180px;
+    /* height:127px; */
+    margin:0px 0px 0px 0px;  
+    overflow: hidden;
+    display: block;
+    color:#666;
+}
+.flex-item-xy:hover{
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+    
+}
+
+
+
+.item-thumbnail{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.item-thumbnail img{
+    width: 100%;
+    /* height:90px; */
+    transition: transform 0.3s ease 0s;
+}
+
+a:hover .item-thumbnail img {
+    /* -webkit-transform: scale(1.05); */
+    transform: scale(1.05);
+}
+.flex-item-y{
+    /* background-color: cornflowerblue; */
+    width: 180px;
+    height: 480px;
+    margin: 10px;
+    
+}
+.dorp{
+    position: relative;
+    display: inline-block;
+}
+/* 菜单 */
+.dorp_con{
+    display: none;
+    position:absolute;
+    top: -10px;
+    left:165px;
+    /* position:fixed;
+	top:10px;
+	right:370px; */
+    background-color:#f9f9f9 ;
+    min-width: 600px;
+    min-height: 370px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding:12px 12px;
+}
+.dorp_con .li{
+    position:absolute;
+    left:0px;
+    top: 0px;
+    /* position:fixed;
+	top:10px;
+	right:680px; */
+    min-width: 260px;
+    min-height: 370px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding:12px 25px;
+    border-right:1px #ccc dashed
+}
+.dorp_con .ly{
+    position:absolute;
+    top: 0px;
+    left:310px;
+    /* position:fixed;
+	top:10px;
+	right:370px; */
+    min-width: 260px;
+    min-height: 370px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding:12px 25px;
+    color: aqua;
+}
+.dorp:hover .dorp_con{display:block;}
+
+
+</style>
+</head>
+<body>
+  
+
+
+<div class="flex-container">
+ 
+ 
+    <div class="flex-item-y">
+     <div class="dorp">
+            <dt>食品饮料</dt>
+            <p>           
+                    <a href="#">糖果</a>
+                    <a href="#">饼干</a>
+                    <a href="#">坚果</a>
+                    <a href="#">牛奶</a>
+                    <a href="#">酒水</a>  
+                    <a href="#">糖</a>                   
+                </p>      
+      
+        <div class="dorp_con">          
+        <div class="li">
+            <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>饮料/水</h4>
+            <p>           
+            <a href="#">水</a>
+            <a href="#">果蔬饮料</a>
+            <a href="#">茶饮料</a>
+            <a href="#">碳酸饮料</a>
+            <a href="#">功能饮料</a>
+            <a href="#">咖啡</a>
+        </p>      
+        <h4>肉类</h4>
+            <p>           
+            <a href="#">牛肉干</a>
+            <a href="#">鸡翅</a>
+            <a href="#">凤爪</a>
+            <a href="#">鸭脖</a>
+            <a href="#">鸡腿</a>
+            <a href="#">鱼干</a>
+        </p>      
+        <h4>酒</h4>
+            <p>           
+            <a href="#">鸡尾酒</a>
+            <a href="#">葡萄酒</a>
+            <a href="#">啤酒</a>
+            <a href="#">二锅头</a>
+            <a href="#">白酒</a>
+            <a href="#">咖啡</a>
+        </p>      
+    </div>
+    <div class="ly">
+            <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+    </p>      
+    </div>
+    </div> 
+    </div>
+<hr>
+
+<div class="dorp">
+        <dt>粮油副食</dt>
+        <p>           
+                <a href="#">油</a>
+                <a href="#">大米</a>
+                <a href="#">调料</a>
+                <a href="#">方便面</a>
+                <a href="#">火腿肠</a>
+                
+            </p>      
+  
+  
+  
+    <div class="dorp_con">          
+        <div class="li">
+            <h4>大米</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>方便面</h4>
+            <p>           
+            <a href="#">水</a>
+            <a href="#">果蔬饮料</a>
+            <a href="#">茶饮料</a>
+            <a href="#">碳酸饮料</a>
+            <a href="#">功能饮料</a>
+            <a href="#">咖啡</a>
+        </p>      
+        <h4>油</h4>
+            <p>           
+            <a href="#">牛肉干</a>
+            <a href="#">鸡翅</a>
+            <a href="#">凤爪</a>
+            <a href="#">鸭脖</a>
+            <a href="#">鸡腿</a>
+            <a href="#">鱼干</a>
+        </p>      
+        <h4>下饭菜</h4>
+            <p>           
+            <a href="#">鸡尾酒</a>
+            <a href="#">葡萄酒</a>
+            <a href="#">啤酒</a>
+            <a href="#">二锅头</a>
+            <a href="#">白酒</a>
+            <a href="#">咖啡</a>
+        </p>      
+    </div>
+    <div class="ly">
+            <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+    </p>      
+    </div>
+    
+</div> 
+</div>
+<hr>
+
+<div class="dorp">
+        <dt>美容洗护</dt>
+        <p>           
+                <a href="#">洗发</a>
+                <a href="#">沐浴</a>
+                <a href="#">牙膏</a>
+                <a href="#">洁面</a>
+                <a href="#">卫生巾</a>
+            </p>      
+  
+  
+  
+    <div class="dorp_con">          
+        <div class="li">
+            <h4>洗发露</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>沐浴露</h4>
+            <p>           
+            <a href="#">水</a>
+            <a href="#">果蔬饮料</a>
+            <a href="#">茶饮料</a>
+            <a href="#">碳酸饮料</a>
+            <a href="#">功能饮料</a>
+            <a href="#">咖啡</a>
+        </p>      
+        <h4>牙膏</h4>
+            <p>           
+            <a href="#">牛肉干</a>
+            <a href="#">鸡翅</a>
+            <a href="#">凤爪</a>
+            <a href="#">鸭脖</a>
+            <a href="#">鸡腿</a>
+            <a href="#">鱼干</a>
+        </p>      
+        <h4>个人护理</h4>
+            <p>           
+            <a href="#">鸡尾酒</a>
+            <a href="#">葡萄酒</a>
+            <a href="#">啤酒</a>
+            <a href="#">二锅头</a>
+            <a href="#">白酒</a>
+            <a href="#">咖啡</a>
+        </p>      
+    </div>
+    <div class="ly">
+            <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+    </p>      
+    </div>
+
+
+  </div>
+</div>
+<hr>
+<div class="dorp">
+        <dt>家居家电</dt>
+        <p>           
+                <a href="#">毛巾</a>
+                <a href="#">家电</a>
+                <a href="#">玻璃杯</a>
+                <a href="#">拖鞋</a>
+                <a href="#">收纳</a>
+                
+            </p>      
+  
+  
+  
+    <div class="dorp_con">          
+        <div class="li">
+            <h4>毛巾</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>家电</h4>
+            <p>           
+            <a href="#">水</a>
+            <a href="#">果蔬饮料</a>
+            <a href="#">茶饮料</a>
+            <a href="#">碳酸饮料</a>
+            <a href="#">功能饮料</a>
+            <a href="#">咖啡</a>
+        </p>      
+        <h4>玻璃杯</h4>
+            <p>           
+            <a href="#">牛肉干</a>
+            <a href="#">鸡翅</a>
+            <a href="#">凤爪</a>
+            <a href="#">鸭脖</a>
+            <a href="#">鸡腿</a>
+            <a href="#">鱼干</a>
+        </p>      
+        <h4>拖鞋</h4>
+            <p>           
+            <a href="#">鸡尾酒</a>
+            <a href="#">葡萄酒</a>
+            <a href="#">啤酒</a>
+            <a href="#">二锅头</a>
+            <a href="#">白酒</a>
+            <a href="#">咖啡</a>
+        </p>      
+    </div>
+    <div class="ly">
+            <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+        </p>      
+        <h4>糖果/巧克力</h4>
+            <p>           
+            <a href="#">巧克力</a>
+            <a href="#">口香糖</a>
+            <a href="#">棒棒糖</a>
+            <a href="#">牛奶糖</a>
+            <a href="#">果糖</a>
+            <a href="#">软糖</a>
+    </p>      
+    </div>
+
+
+  </div>
+</div>
+
+</div>
+  <div class="flex-item">
+
+    <li class="flex-item-xy">
+        <a href="#">
+            <div class="item-thumbnail">
+                <img src="../images/tb1.jpg" >
+            </div>
+         
+        </a>
+    </li>
+    <li class="flex-item-xy" >
+        <a href="#">
+            <div class="item-thumbnail">
+                <img src="../images/tb2.jpg" >
+            </div>
+          
+        </a>
+    </li>
+    <li class="flex-item-xy">
+        <a href="#">
+            <div class="item-thumbnail">
+                <img src="../images/tb3.jpg" >
+            </div>
+           
+        </a>
+    </li>
+    <li class="flex-item-xy">
+        <a href="#">
+            <div class="item-thumbnail">
+                <img src="../images/tb4.jpg">
+            </div>
+           
+        </a>
+    </li>
+    <li class="flex-item-xy" >
+        <a href="#">
+            <div class="item-thumbnail">
+                <img src="../images/tb5.jpg" >
+            </div>
+          
+        </a>
+    </li>
+    <li class="flex-item-xy" >
+        <a href="#">
+            <div class="item-thumbnail">
+                <img src="../images/tb6.jpg" >
+            </div>
+           
+        </a>
+    </li>
+  
+ 
+  </div>
+ 
+</div>
+
+
+</body>
+</html>
