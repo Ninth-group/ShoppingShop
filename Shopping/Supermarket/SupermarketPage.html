@@ -3,176 +3,70 @@
 <head>
 <meta charset="utf-8"> 
 <title>杰克超市</title> 
-
-<style> 
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    width: 760px;
-    height: 390px;
-    background-color: lightgrey;
-    
-}
-/* 响应式布局 */
-@media screen and (max-width:1200px){
-    .mod{
-        width: 800px;
-    }
-
-    .product-item{
-
-        margin:0px 20px 10px 0px;  
-
-    }
-    .mod .right{
-        padding: 12px 0px 0px 30px;
-    }
-}
-.entrance dl{
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-.entrance dt {   
-     font: 700 14px/24px "Microsoft yahei";
-}
-
-.entrance dd {
-    margin-left: -10px;
-    overflow: hidden;
-    zoom: 1;
-}
-.entrance .entrance-item {
-    position: relative;
-    float: left;
-    display: block;
-    border-left: 1px solid #ececec;
-    line-height: 1;
-    height: auto;
-    padding: 0 8px;
-    margin: 7px 0 5px;
-}
-.entrance a:hover{
-    color:#3983e5;
-}
-.icon_hot {
-    width: 11px;
-    height: 11px;
-    background-position: -16px -32px;
-}
-.entrance .entrance-item .icon_hot {
-    position: absolute;
-    top: -6px;
-    right: 3px;
-}
-
-a{
-    text-decoration:none;
-    font-size: 13px;
-    color: #778899;
-}
-dt{
-    text-align: center;
-    font-size: 15px;
-}
-.flex-item {
-    /* background-color: cornflowerblue; */
-    width: 580px;
-    height: 480px;
-    margin: 10px;
-}
-.flex-item-xy{
-    float:left;
-    width: 180px;
-    /* height:127px; */
-    margin:0px 0px 0px 0px;  
-    overflow: hidden;
-    display: block;
-    color:#666;
-}
-.flex-item-xy:hover{
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
-    
-}
-
-
-
-.item-thumbnail{
-    width: 100%;
-    height:100%;
-    overflow: hidden;
-}
-.item-thumbnail img{
-    width: 100%;
-    /* height:90px; */
-    transition: transform 0.3s ease 0s;
-}
-
-a:hover .item-thumbnail img {
-    /* -webkit-transform: scale(1.05); */
-    transform: scale(1.05);
-}
-.flex-item-y{
-    /* background-color: cornflowerblue; */
-    width: 180px;
-    height: 480px;
-    margin: 10px;
-    
-}
-.dorp{
-    position: relative;
-    display: inline-block;
-}
-/* 菜单 */
-.dorp_con{
-    display: none;
-    position:absolute;
-    top: -10px;
-    left:165px;
-    /* position:fixed;
-	top:10px;
-	right:370px; */
-    background-color:#f9f9f9 ;
-    min-width: 600px;
-    min-height: 370px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding:12px 12px;
-}
-.dorp_con .li{
-    position:absolute;
-    left:0px;
-    top: 0px;
-    /* position:fixed;
-	top:10px;
-	right:680px; */
-    min-width: 260px;
-    min-height: 370px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding:12px 25px;
-    border-right:1px #ccc dashed
-}
-.dorp_con .ly{
-    position:absolute;
-    top: 0px;
-    left:310px;
-    /* position:fixed;
-	top:10px;
-	right:370px; */
-    min-width: 260px;
-    min-height: 370px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding:12px 25px;
-    color: aqua;
-}
-.dorp:hover .dorp_con{display:block;}
-
-
-</style>
 </head>
+<link rel="stylesheet" href="../css/SupermarketStyle.css">
 <body>
   
+    <div class="top">
+        <div class="nav">
+            <div class="left">
+                <ul>
+                    <li>
+                        <a href="#">欢迎来到杰克马 </a></li>
+                    <li>
+                        <a href="loginregister/login.html">请先登陆再逛</a>
 
+                    </li>
+                    <li>
+                        <a href="loginregister/register.html">没账号就注册</a>
+                    </li>
+                    <li>
+                        <a href="#">手机逛杰克马商城</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="../MyHomepage/MyHomepage.html">我的杰克</a><i class="icon-cheveron-down"></i>
+                    </li>
+                    <li>
+                        <i class="icon-cart" style="margin-right: 5px;color: #f40;"></i><a
+                            href="../ShoppingCart.html">购物车</a><i class="icon-cheveron-down"></i>
+                    </li>
+                    <li>
+                        <i class="icon-star-full" style="margin-right: 5px;"></i><a href="#">收藏夹</a><i
+                            class="icon-cheveron-down"></i>
+                    </li>
+                    <li>
+                        <a href="#">商品分类</a>
+                    </li>
+                    <li style="color:#ddd;">|</li>
+                    <li>
+                        <a href="#">卖家中心</a><i class="icon-cheveron-down"></i>
+                    </li>
+                    <li>
+                        <a href="#">联系客服</a><i class="icon-cheveron-down"></i>
+                    </li>
+                    <li>
+                        <i class="icon-menu" style="color: #f40;margin-right: 5px;"></i><a
+                            href="#">网站导航</a><i class="icon-cheveron-down"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container-s">
+       
+        <div class="flex-item-a">
+            <a href="../index.html">杰克首页</a>
+        </div>
+        <div class="flex-item-a">
+            <a href="#">企业采购</a>
+        </div>
+      
+    </div>
 
 <div class="flex-container">
  
